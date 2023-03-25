@@ -1,0 +1,123 @@
+body{
+    background-color: #1C110A;
+    margin: 0px;
+}
+
+#menu{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    color: white;
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-family: "Ibarra Real Nova", serif;
+
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    transition: opacity 400ms ease,
+    font-size 400ms ease;
+}
+
+
+#menu-background-pattern {
+    background-image: radial-gradient(
+        #E4D6A7 9%, 
+      transparent 5%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+#menu-items{
+    margin-left: clamp(4rem, 20vw, 48rem);
+    position: relative;
+    z-index: 2;
+}
+
+#menu-items:hover > .menu-item{
+    opacity: 0.3;
+    font-size: clamp(2.8rem, 7.8vw, 7.8rem);
+}
+
+#menu-items:hover ~ #menu-background-pattern{
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+}
+
+#menu-items:hover > .menu-item:hover{
+    opacity: 1;
+    font-size: clamp(3.2rem, 8.2vw, 8.2rem);
+}
+
+
+/* About me styles */
+
+#text{
+    color: white;
+    font-size: clamp(0.75rem, 2vw, 2rem);
+    font-family: "Ibarra Real Nova", serif;
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    padding: 0 17rem;
+    z-index: 3; 
+    transition: opacity 500ms ease;
+}
+
+.text-section a{
+    color: white;
+    font-size: clamp(0.75rem, 2vw, 2rem);
+    font-family: "Ibarra Real Nova", serif;
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    z-index: 3; 
+    transition: opacity 500ms ease,
+    font-size 500ms ease;
+}
+
+
+
+#text:hover ~ #menu-background-pattern{
+    background-size: 13vmin 13vmin;
+    opacity: 0.5;
+}
+
+.text-section{
+    transition: opacity 500ms ease,
+    font-size 500ms ease;
+}
+
+#text:hover > .text-section{
+    opacity: 0.3;
+    font-size: clamp(0.7rem, 1.8vw, 1.8rem);
+}
+
+#text:hover > .text-section a{
+    opacity: 0.3;
+    font-size: clamp(0.7rem, 1.8vw, 1.8rem);
+}
+
+#text:hover > .text-section:hover{
+    opacity: 1;
+    font-size: clamp(0.8rem, 2.2vw, 2.2rem);
+}
+
+#text:hover > .text-section:hover a{
+    opacity: 1;
+    font-size: clamp(0.8rem, 2.2vw, 2.2rem);
+}
