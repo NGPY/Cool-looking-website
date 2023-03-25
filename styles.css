@@ -1,5 +1,5 @@
 body{
-    background-color: #1C110A;
+    background-color: rgb(20,20,20);
     margin: 0px;
 }
 
@@ -25,7 +25,7 @@ body{
 
 #menu-background-pattern {
     background-image: radial-gradient(
-        #E4D6A7 9%, 
+        #f9f9f9 9%, 
       transparent 5%
     );
     background-position: 0% 0%;
@@ -73,9 +73,9 @@ body{
     list-style-type: none;
     display: block;
     text-decoration: none;
-    padding: 0 17rem;
     z-index: 3; 
     transition: opacity 500ms ease;
+    margin-left: clamp(4rem, 20vw, 48rem);
 }
 
 .text-section a{
@@ -104,20 +104,18 @@ body{
 
 #text:hover > .text-section{
     opacity: 0.3;
-    font-size: clamp(0.7rem, 1.8vw, 1.8rem);
 }
 
 #text:hover > .text-section a{
     opacity: 0.3;
-    font-size: clamp(0.7rem, 1.8vw, 1.8rem);
 }
 
 #text:hover > .text-section:hover{
     opacity: 1;
-    font-size: clamp(0.8rem, 2.2vw, 2.2rem);
+    font-size: clamp(0.775rem, 2.1vw, 2.1rem);
 }
 
 #text:hover > .text-section:hover a{
     opacity: 1;
-    font-size: clamp(0.8rem, 2.2vw, 2.2rem);
+    font-size: clamp(0.775rem, 2.1vw, 2.1rem);
 }
