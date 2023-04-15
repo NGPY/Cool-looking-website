@@ -1,0 +1,63 @@
+:root{
+    --color-black: #02020B;
+    --color-vanilla: #ECE4B7;
+    --color-fawn: #E6AA68;
+    font-family: 'PT Mono', monospace;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* optional: hide scrollbar track */
+  }
+
+body{
+    background-color: var(--color-black);
+    padding: 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.terminal{
+    color: var(--color-vanilla);
+    font-size: 20px;
+    padding: inherit;
+    animation: inherit;
+}
+
+.terminal-input{
+    display: flex;
+    align-items: center;
+    animation: inherit;
+    color: var(--color-fawn);
+    caret-color: var(--color-fawn);
+}
+
+.terminal-input input{
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    width: 70vw;
+    margin-left: 0;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#terminal-output pre{
+    margin: 0 0;
+    line-height: 0.5;
+}
